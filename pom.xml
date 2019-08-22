@@ -57,16 +57,20 @@
 
     <repositories>
         <repository>
-            <id>myMavenRepo.read</id>
+            <id>myMavenRepoRead</id>
             <url>https://mymavenrepo.com/repo/XseuGWMDG8CuYdQgxjAv/</url>
         </repository>
     </repositories>
 
     <distributionManagement>
         <repository>
-            <id>myMavenRepo.write</id>
+            <id>myMavenRepoWrite</id>
             <url>https://mymavenrepo.com/repo/IGAhkNYcaOnkuyJKN96S/</url>
         </repository>
+        <snapshotRepository>
+            <id>myMavenRepoWrite</id>
+            <url>${myMavenRepoWriteUrl}</url>
+        </snapshotRepository>
     </distributionManagement>
 
 </project>
