@@ -6,7 +6,7 @@ pipeline {
 
             steps {
                 withMaven(maven : 'maven_3_6_1') {
-                    sh 'mvn clean compile'
+                    sh 'mvn clean compile -DdoNotUseMyMavenRepo=true'
                 }
             }
         }
@@ -15,7 +15,7 @@ pipeline {
 
             steps {
                 withMaven(maven : 'maven_3_6_1') {
-                    sh 'mvn test'
+                    sh 'mvn test -DdoNotUseMyMavenRepo=true'
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
                 withMaven(maven : 'maven_3_6_1') {
-                    sh 'mvn deploy'
+                    sh 'mvn deploy -DdoNotUseMyMavenRepo=true'
                 }
             }
         }
