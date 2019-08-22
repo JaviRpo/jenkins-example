@@ -19,7 +19,7 @@ pipeline {
                 }
             }
         }
-
+/**
 
         stage ('Deployment Stage') {
             steps {
@@ -28,5 +28,6 @@ pipeline {
                 }
             }
         }
+*/
     }
 }
