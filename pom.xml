@@ -69,7 +69,7 @@
         </repository>
         <snapshotRepository>
             <id>myMavenRepoWrite</id>
-            <url>${myMavenRepoWriteUrl}</url>
+            <url>https://mymavenrepo.com/repo/IGAhkNYcaOnkuyJKN96S/</url>
         </snapshotRepository>
     </distributionManagement>
 
